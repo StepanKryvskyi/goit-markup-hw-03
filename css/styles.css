@@ -17,11 +17,62 @@ body {
   background-color: #ffffff;
 }
 
+/* Reset */
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+
+}
+
+/* Visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.main-nav{
+  display: flex;
+  
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item:not(:first-child){
+  margin-left: 40px;
+}
+.nav-logo{
+
+  margin-right: auto;
+}
+
 /* Header */
 .link {
   font-style: normal;
   text-decoration: none;
-  font-family: "Roboto";
 }
 .logo {
   color: #4d5ae5;
@@ -31,6 +82,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  display: block;
+  margin-right: 76px;
 }
 
 .logo-header {
@@ -38,12 +93,16 @@ body {
 }
 
 .menu-link {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  
   color: var(--titel-text-color);
+  
+  padding-top: 21px;
+  padding-bottom: 21px;
+  display: block;
 }
 .menu-link:hover,
 :focus {
@@ -51,6 +110,7 @@ body {
 }
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-link {
@@ -58,17 +118,25 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: var(--primary-text-color);
+  
+  padding-top: 21px;
+  padding-bottom: 21px;
+  display: block;
+  
 }
 .contacts-link:hover,
 :focus {
   color: var(--acsent-color);
 }
 
+
 /* Hero */
 .hero {
   background-color: var(--titel-text-color);
   text-align: center;
+  margin-bottom: 120px;
 }
 .hero-titel {
   font-weight: 700;
@@ -81,27 +149,27 @@ body {
 .btn {
   background-color: var(--button-color);
   color: var(--primary-white-color);
-  cursor: pointer;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border-color: transparent;
-width: 169px;
-height: 56px;
 
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  width: 169px;
+  height: 56px;
 }
 
 .btn:hover,
 .btn:focus {
   background-color: var(--acsent-color);
 }
-.list {
-  list-style: none;
-}
+
 
 /* Advantages section */
 .titel {
@@ -126,6 +194,18 @@ height: 56px;
 .list.text {
   line-height: 1.5;
 }
+
+.advantages-list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.advantages-items.item:not(:first-child){
+  margin-left: 24px;
+}
+/* Works-ex */
+
 .heading {
   font-size: 36px;
   line-height: 1.11;
@@ -134,6 +214,17 @@ height: 56px;
   letter-spacing: 0.02em;
   color: var(--titel-text-color);
 }
+
+.works-ex{
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.works-ex-item:not(:first-child){
+  margin-left: 24px;
+}
+
 /* Team section */
 .team-section {
   background-color: #f4f4fd;
@@ -157,6 +248,17 @@ height: 56px;
   line-height: 1.5;
 }
 
+
+.team-list-item:not(:first-child){
+  margin-left: 24px;
+}
+
+.team-list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
 /* Portfolio styles */
 .ptf-btn {
   font-family: "Roboto", sans-serif;
@@ -167,7 +269,7 @@ height: 56px;
   color: var(--button-color);
   background-color: #f4f4fd;
   cursor: pointer;
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
 .ptf-btn:hover,
@@ -176,16 +278,12 @@ height: 56px;
   color: var(--primary-white-color);
 }
 
-.conteiner{
+.items {
   display: flex;
-}
-
-.items{
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 24px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
 }
 
 .portfolio-link {
