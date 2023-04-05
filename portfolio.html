@@ -22,18 +22,24 @@
     <header>
       <div class="container main-nav">
         <nav>
-          <a href="./index.html" class="link logo"
-            >Web<span class="logo-header">Studio</span></a
-          >
           <ul class="list site-nav">
-            <li class="item"><a href="./index.html" class="link menu-link">Studio</a></li>
+            <li class="item">
+              <div class="nav-logo">
+                <a href="./index.html" class="link logo"
+                  >Web<span class="logo-header">Studio</span></a
+                >
+              </div>
+            </li>
+            <li class="item">
+              <a href="./index.html" class="link menu-link">Studio</a>
+            </li>
             <li class="item">
               <a href="./portfolio.html" class="link menu-link">Portfolio</a>
             </li>
             <li class="item"><a href="" class="link menu-link">Contacts</a></li>
           </ul>
         </nav>
-        <address class="contacts ">
+        <address class="contacts">
           <ul class="list site-nav">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="link contacts-link"
@@ -51,32 +57,31 @@
     </header>
     <!-- Main -->
     <main>
-      <section>
+      <section class="container">
         <h1 hidden>Our projects</h1>
-        <ul class="list ">
-         
-            <li class="items">
-              <button type="button" class="ptf-btn btn">All</button>
-            </li>
-            <li class="items">
-              <button type="button" class="ptf-btn btn">Web Site</button>
-            </li>
-            <li class="items">
-              <button type="button" class="ptf-btn btn">App</button>
-            </li>
-            <li class="items">
-              <button type="button" class="ptf-btn btn">Design</button>
-            </li>
-            <li class="items">
-              <button type="button" class="ptf-btn btn">Marketing</button>
-            </li>
-          
+        <ul class="list button-list">
+          <li class="items">
+            <button type="button" class="ptf-btn">All</button>
+          </li>
+          <li class="items">
+            <button type="button" class="ptf-btn">Web Site</button>
+          </li>
+          <li class="items">
+            <button type="button" class="ptf-btn">App</button>
+          </li>
+          <li class="items">
+            <button type="button" class="ptf-btn">Design</button>
+          </li>
+          <li class="items">
+            <button type="button" class="ptf-btn">Marketing</button>
+          </li>
         </ul>
 
         <!-- Works -->
 
-        <ul class="list">
-          <li>
+        <ul class="list works-list">
+          <div class="works-container">
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/bankingapp.jpg"
@@ -89,7 +94,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/payment.jpg"
@@ -102,7 +107,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/meditationapp.jpg"
@@ -114,8 +119,10 @@
               <p class="desc">App</p>
             </a>
           </li>
+        </div>
 
-          <li>
+        <div class="works-container">
+        <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/taxiservice.jpg"
@@ -127,7 +134,7 @@
               <p class="desc">Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/screenillustrations.jpg"
@@ -139,7 +146,7 @@
               <p class="desc">Design</p>
             </a>
           </li>
-          <li>
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/onlinecourses.jpg"
@@ -151,8 +158,10 @@
               <p class="desc">Marketing</p>
             </a>
           </li>
+        </div>
 
-          <li>
+        <div class="works-container">
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/storiesconcept.jpg"
@@ -165,7 +174,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/organicfood.jpg"
@@ -178,7 +187,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="works-item">
             <a href="" class="link portfolio-link">
               <img
                 src="./images/portfolio/freshcoffee.jpg"
@@ -190,11 +199,12 @@
               <p class="desc">Web Site</p>
             </a>
           </li>
+        </div>
         </ul>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer container">
       <a href="./index.html" class="link logo"
         >Web<span class="logo-footer">Studio</span></a
       >
