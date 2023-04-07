@@ -250,8 +250,12 @@ button {
 .works-ex {
   display: flex;
   gap: 24px;
-  width: calc((100% - 48px) / 3);
 }
+
+.works-ex-item{
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
 /* Team section */
 .team-section {
   background-color: #f4f4fd;
@@ -265,21 +269,10 @@ padding-bottom: 120px;
   line-height: 1.5;
 
   background-color: var(--primary-white-color);
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 0px 32px;
-  gap: 32px;
-
-  width: 264px;
-  height: 380px;
-  left: 155px;
-  top: 1780px;
-
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.team-container{
+  padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -291,15 +284,17 @@ padding-bottom: 120px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--titel-text-color);
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team-list-text{
+  text-align: center;
 }
 
-.team-list-item:not(:first-child) {
-  margin-left: 24px;
-}
 
 .team-list {
   display: flex;
-  align-items: center;
+  gap: 24px;
 }
 
 /* Portfolio styles */
@@ -310,10 +305,9 @@ padding-bottom: 120px;
 
 .button-list {
   display: flex;
-  align-items: center;
-  flex-direction: row;
   justify-content: center;
   margin-bottom: 72px;
+  gap: 24px;
 }
 
 .ptf-btn {
@@ -333,28 +327,28 @@ padding-bottom: 120px;
 .ptf-btn:focus {
   background-color: var(--acsent-color);
   color: var(--primary-white-color);
+  border: 1px solid transparent;
 }
 
-.items:not(:first-child) {
-  margin-left: 24px;
-}
 
 .works-list {
-  margin-top: 72px;
-
-  align-items: center;
-}
-
-.works-container {
   display: flex;
-  align-items: center;
-}
-.works-container:not(:last-child) {
-  margin-bottom: 48px;
+  margin-top: 72px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+ 
 }
 
-.works-item:not(:first-child) {
-  margin-left: 24px;
+.works-item{
+  width: calc((100% - 48px) / 3);
+}
+
+.app-container{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .portfolio-link {
