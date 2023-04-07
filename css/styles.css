@@ -63,6 +63,7 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 /* Header */
@@ -149,8 +150,9 @@ button {
   margin-bottom: 120px;
   padding-top: 188px;
   padding-bottom: 188px;
-  
+  text-align: center;
 }
+
 
 .hero-titel {
   font-weight: 700;
@@ -197,6 +199,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--titel-text-color);
+  margin-bottom: 8px;
 }
 .text {
   line-height: 1.5;
@@ -209,7 +212,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--titel-text-color);
-  margin-bottom: 8px;
+  
 }
 .list.text {
   line-height: 1.5;
@@ -230,6 +233,10 @@ button {
 
 /* Works-ex */
 
+.works{
+  padding-bottom: 120px;
+}
+
 .heading {
   font-size: 36px;
   line-height: 1.11;
@@ -242,22 +249,16 @@ button {
 
 .works-ex {
   display: flex;
-  align-items: center;
-  margin-bottom: 120px;
+  gap: 24px;
+  width: calc((100% - 48px) / 3);
 }
-
-.works-ex-item:not(:first-child) {
-  margin-left: 24px;
-}
-
 /* Team section */
 .team-section {
   background-color: #f4f4fd;
-
-  height: 732px;
-  left: 0px;
-  top: 1548px;
+padding-top: 120px;
+padding-bottom: 120px;
 }
+
 
 .team-list-item {
   font-size: 16px;
@@ -272,7 +273,6 @@ button {
   padding: 0px 0px 32px;
   gap: 32px;
 
-  /* position: absolute; */
   width: 264px;
   height: 380px;
   left: 155px;
@@ -304,12 +304,16 @@ button {
 
 /* Portfolio styles */
 
+.portfolio-containe{
+  padding: 96px 120px;
+}
+
 .button-list {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  margin-top: 96px;
+  margin-bottom: 72px;
 }
 
 .ptf-btn {
@@ -376,11 +380,15 @@ button {
   background-color: var(--titel-text-color);
   padding: 100px 0;
 }
+ 
+.logo-dark{
+  display: inline-block;
+  margin-bottom: 16px;
+}
 
 .logo-footer {
   color: #f4f4fd;
-  display: inline-block;
-  padding-bottom: 16px;
+
 }
 .footer-text {
   font-size: 16px;
