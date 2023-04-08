@@ -299,7 +299,7 @@ padding-bottom: 120px;
 
 /* Portfolio styles */
 
-.portfolio-containe{
+.portfolio-container{
   padding: 96px 0 120px;
 }
 
@@ -348,7 +348,6 @@ padding-bottom: 120px;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-link {
@@ -361,6 +360,7 @@ padding-bottom: 120px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--titel-text-color);
+  margin-bottom: 8px;
 }
 .desc {
   font-size: 16px;
