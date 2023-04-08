@@ -300,7 +300,8 @@ padding-bottom: 120px;
 /* Portfolio styles */
 
 .portfolio-containe{
-  padding: 96px 120px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .button-list {
